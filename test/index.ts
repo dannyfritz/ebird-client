@@ -1,5 +1,5 @@
 import dotenv from "dotenv";
-import EbirdClient from "../src";
+import EbirdClient, {Category, Format} from "../src";
 
 dotenv.config();
 
@@ -9,11 +9,16 @@ if (process.env.API_KEY === undefined) {
 }
 
 const apiKey = process.env.API_KEY!;
+ // const denver = {
+     // latitude: 39.742043,
+     // longitude: -104.991531,
+ // };
 
 const ebirdClient = new EbirdClient(apiKey);
 
-ebirdClient.recentObservationsInARegion({
-    latitude: 39.742043,
-    longitude: -104.991531,
+ebirdClient.taxonomy({
+  cat: [Category.SPECIES],
+  fmt: Format.JSON,
 })
-    .then((data) => console.log(data));
+  .then((data) => console.log(data))
+  .catch((error) => console.error(error));

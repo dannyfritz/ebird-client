@@ -10,7 +10,8 @@
     },
     "jsRules": {},
     "rules": {
-        "no-console": [false, "log", "error"]
+        "no-console": [false, "log", "error"],
+        "indent": [true, "spaces", 2]
     },
     "rulesDirectory": []
 }

@@ -2,10 +2,10 @@
   "name": "ebird-client",
   "version": "0.0.0",
   "description": "A client to interact with eBird API 2.0",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "build": "tsc",
-    "lint": "tslint -c tslint.json 'src/**/*.ts'",
+    "lint": "tslint --fix -c tslint.json 'src/**/*.ts'",
     "test": "node test/index.js"
   },
   "repository": {
