@@ -11,4 +11,4 @@ export const TaxonomicGroupsParams: Array<keyof ITaxonomicGroupsRequest> =
   [];
 
 export const TaxonomicGroupsUrl = (request: ITaxonomicGroupsRequest): string =>
-  `/ref/taxon/sppgroup/${request.speciesGrouping}`;
+  `/ref/sppgroup/${request.speciesGrouping}`;

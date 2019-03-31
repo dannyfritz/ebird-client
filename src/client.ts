@@ -65,14 +65,6 @@ export default class EbirdClient {
     return this.get(RecentChecklistsFeedUrl, RecentChecklistsFeedParams, request);
   }
 
-  public recentObservationsInARegion(request: IRecentObservationsInARegionRequest): Promise<IRecentObservationsInARegionResponse> {
-    return this.get(RecentObservationsInARegionUrl, RecentObservationsInARegionParams, request);
-  }
-
-  public recentObservationsOfASpeciesInARegion(request: IRecentObservationsOfASpeciesInARegionRequest): Promise<IRecentObservationsOfASpeciesInARegionResponse> {
-    return this.get(RecentObservationsOfASpeciesInARegionUrl, RecentObservationsOfASpeciesInARegionParams, request);
-  }
-
   public recentNearbyNotableObservations(request: IRecentNearbyNotableObservationsRequest): Promise<IRecentNearbyNotableObservationsResponse> {
     return this.get(RecentNearbyNotableObservationsUrl, RecentNearbyNotableObservationsParams, request);
   }
@@ -87,6 +79,14 @@ export default class EbirdClient {
 
   public recentNotableObservationsInARegion(request: IRecentNotableObservationsInARegionRequest): Promise<IRecentNotableObservationsInARegionResponse> {
     return this.get(RecentNotableObservationsInARegionUrl, RecentObservationsInARegionParams, request);
+  }
+
+  public recentObservationsInARegion(request: IRecentObservationsInARegionRequest): Promise<IRecentObservationsInARegionResponse> {
+    return this.get(RecentObservationsInARegionUrl, RecentObservationsInARegionParams, request);
+  }
+
+  public recentObservationsOfASpeciesInARegion(request: IRecentObservationsOfASpeciesInARegionRequest): Promise<IRecentObservationsOfASpeciesInARegionResponse> {
+    return this.get(RecentObservationsOfASpeciesInARegionUrl, RecentObservationsOfASpeciesInARegionParams, request);
   }
 
   public regionalStatisticsOnADate(request: IRegionalStatisticsOnADateRequest): Promise<IRegionalStatisticsOnADateResponse> {

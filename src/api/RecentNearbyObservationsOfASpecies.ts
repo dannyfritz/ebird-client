@@ -20,4 +20,4 @@ export const RecentNearbyObservationsOfASpeciesParams: Array<keyof IRecentNearby
   ["lat", "lng", "dist", "back", "maxResults", "includeProvisional", "hotspot", "sppLocale"];
 
 export const RecentNearbyObservationsOfASpeciesUrl = (request: IRecentNearbyObservationsOfASpeciesRequest): string =>
-  `/ref/obs/geo/recent/${request.speciesCode}`;
+  `/data/obs/geo/recent/${request.speciesCode}`;

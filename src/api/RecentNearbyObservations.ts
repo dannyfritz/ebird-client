@@ -21,4 +21,4 @@ export const RecentNearbyObservationsParams: Array<keyof IRecentNearbyObservatio
   ["lat", "lng", "dist", "back", "cat", "maxResults", "includeProvisional", "hotspot", "sort", "sppLocale"];
 
 export const RecentNearbyObservationsUrl = (request: IRecentNearbyObservationsRequest) =>
-  `/ref/obs/geo/recent`;
+  `/data/obs/geo/recent`;
