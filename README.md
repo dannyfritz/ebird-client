@@ -1,6 +1,11 @@
 # ebird-client
 
+[![npm](https://img.shields.io/npm/v/ebird-client.svg)](https://www.npmjs.com/package/ebird-client)
+![License](https://img.shields.io/npm/l/ebird-client.svg)
+
 This is a client to interact with the [ebird 2.0 API](https://documenter.getpostman.com/view/664302/ebird-api-20/2HTbHW).
+
+Written in TypeScript to improve usage ergonomics.
 
 ## Installation
 
