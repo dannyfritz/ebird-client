@@ -1,3 +1,4 @@
+import { Detail } from "../constants/Detail";
 import { IObservation } from "./IObservation";
 
 export interface IRecentNearbyNotableObservationsRequest {
@@ -6,7 +7,7 @@ export interface IRecentNearbyNotableObservationsRequest {
   dist?: number;
   back?: number;
   maxResults?: number;
-  detail?: boolean;
+  detail?: Detail;
   hotspot?: boolean;
 }
 
@@ -16,4 +17,4 @@ export const RecentNearbyNotableObservationsParams: Array<keyof IRecentNearbyNot
   ["lat", "lng", "dist", "back", "maxResults", "detail", "hotspot"];
 
 export const RecentNearbyNotableObservationsUrl = (_request: IRecentNearbyNotableObservationsRequest) =>
-  `/ref/obs/geo/recent/notable`;
+  `/data/obs/geo/recent/notable`;

@@ -1,5 +1,4 @@
 import axios, { AxiosInstance } from "axios";
-import _ from "lodash";
 import { AdjacentRegionsParams, AdjacentRegionsUrl, IAdjacentRegionsRequest, IAdjacentRegionsResponse } from "./api/AdjacentRegions";
 import { ChecklistFeedOnADateParams, ChecklistFeedOnADateUrl, IChecklistFeedOnADateRequest, IChecklistFeedOnADateResponse } from "./api/ChecklistFeedOnADate";
 import { HistoricObservationsOnADateParams, HistoricObservationsOnADateUrl, IHistoricObservationsOnADateRequest, IHistoricObservationsOnADateResponse } from "./api/HistoricObservationsOnADate";
