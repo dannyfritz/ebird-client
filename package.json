@@ -3,6 +3,13 @@
   "version": "1.0.2",
   "description": "A client to interact with eBird API 2.0",
   "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "files": [
+    "src/**/*.js",
+    "src/**/*.js.map",
+    "src/**/*.d.ts",
+    "src/**/*.ts"
+  ],
   "scripts": {
     "build": "tsc",
     "lint": "tslint --fix -c tslint.json 'src/**/*.ts'",
