@@ -17,6 +17,8 @@ $ npm install ebird-client
 
 Examples in TypeScript.
 
+---
+
 ```ts
 import EbirdClient from "ebird-client";
 import { Detail } from "ebird-client/src/constants/Detail";

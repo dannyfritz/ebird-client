@@ -3,6 +3,7 @@
 *.d.ts
 *.js.map
 tsconfig.tsbuildinfo
+package-lock.json
 
 # Logs
 logs

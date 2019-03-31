@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "lint": "tslint --fix -c tslint.json 'src/**/*.ts'",
-    "test": "node test/index.js"
+    "test": "npm run build && ava test"
   },
   "repository": {
     "type": "git",
@@ -32,7 +32,10 @@
   },
   "devDependencies": {
     "@types/dotenv": "^6.1.1",
+    "@types/lodash": "^4.14.123",
+    "ava": "^1.4.1",
     "dotenv": "^7.0.0",
+    "lodash": "^4.17.11",
     "tslint": "^5.14.0",
     "typescript": "^3.4.1"
   }
