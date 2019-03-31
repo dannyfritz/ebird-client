@@ -14,29 +14,25 @@ Written in TypeScript to improve usage ergonomics.
 $ npm install ebird-client
 ```
 
-## Examples
+## Example
 
-Examples in TypeScript.
-
----
+Example in TypeScript.
 
 ```ts
-import EbirdClient from "ebird-client";
-import { Detail } from "ebird-client/src/constants/Detail";
+import EbirdClient, { Detail } from "ebird-client";
 
-const ebirdClient = new EbirdClient(process.env.API_KEY!);
+const ebird = new EbirdClient(process.env.API_KEY!); //Get your API_KEY from eBird
 
 const denver = {
   latitude: 39.742043,
   longitude: -104.991531,
 };
-ebirdClient.recentNearbyNotableObservations({
+ebird.recentNearbyNotableObservations({
   lat: denver.latitude,
   lng: denver.longitude,
   maxResults: 2,
 })
-  .then((data) => console.log(data))
-  .catch((error) => console.error(error));
+  .then((data) => console.log(data));
 ```
 
 ```json
@@ -68,3 +64,5 @@ ebirdClient.recentNearbyNotableObservations({
 ```
 
 ## Documentation
+
+Refer to the [ebird 2.0 API docs](https://documenter.getpostman.com/view/664302/ebird-api-20/2HTbHW) for usage.
