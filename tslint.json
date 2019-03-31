@@ -11,7 +11,8 @@
     "jsRules": {},
     "rules": {
         "no-console": [false, "log", "error"],
-        "indent": [true, "spaces", 2]
+        "indent": [true, "spaces", 2],
+        "max-line-length": [false, {"limit": 120, "ignore-pattern": "^import |^export {(.*?)}"}]
     },
     "rulesDirectory": []
 }
