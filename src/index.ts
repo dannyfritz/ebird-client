@@ -1,7 +1,7 @@
-export * from "./client";
-
-import EbirdClient from "./client";
+import { EbirdClient } from "./client";
 export default EbirdClient;
+
+export * from "./client";
 
 export { IAdjacentRegionsRequest, IAdjacentRegionsResponse } from "./api/AdjacentRegions";
 export { IChecklistFeedOnADateRequest, IChecklistFeedOnADateResponse } from "./api/ChecklistFeedOnADate";

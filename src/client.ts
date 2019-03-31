@@ -23,7 +23,7 @@ import { ITaxonomyVersionsRequest, ITaxonomyVersionsResponse, TaxonomyVersionsPa
 import { ITop100Request, ITop100Response, Top100Params, Top100Url } from "./api/Top100";
 import { IViewChecklistRequest, IViewChecklistResponse, ViewChecklistParams, ViewChecklistUrl } from "./api/ViewChecklist";
 
-export default class EbirdClient {
+export class EbirdClient {
   private ebirdHttp: AxiosInstance;
 
   constructor(ebirdApiKey: string) {
