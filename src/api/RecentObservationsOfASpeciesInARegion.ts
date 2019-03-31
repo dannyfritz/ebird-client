@@ -1,4 +1,3 @@
-import { Category } from "../constants/Category";
 import { IObservation } from "./IObservation";
 
 export interface IRecentObservationsOfASpeciesInARegionRequest {

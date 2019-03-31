@@ -1,7 +1,8 @@
 import dotenv from "dotenv";
 import EbirdClient from "../src";
-import { Category } from "../src/constants/Category";
 import { Format } from "../src/constants/Format";
+import { RegionNameFormat } from "../src/constants/RegionNameFormat";
+import { RegionType } from "../src/constants/RegionType";
 
 dotenv.config();
 
@@ -19,11 +20,10 @@ const denver = {
 
 const ebirdClient = new EbirdClient(apiKey);
 
-ebirdClient.top100({
-  d: 23,
-  m: 3,
-  regionCode: "US-CO",
-  y: 2019,
+ebirdClient.subRegionList({
+  regionType: RegionType.COUNTRY,
+  parentRegionCode: "world",
+  fmt: Format.JSON,
 })
   .then((data) => console.log(data))
   .catch((error) => console.error(error));

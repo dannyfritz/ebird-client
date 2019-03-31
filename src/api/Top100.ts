@@ -1,4 +1,4 @@
-import { ISpecies } from "./ISpecies";
+import { IPerson } from "./IPerson";
 
 export interface ITop100Request {
   regionCode: string;
@@ -9,7 +9,7 @@ export interface ITop100Request {
   maxResults?: number;
 }
 
-export type ITop100Response = ISpecies[];
+export type ITop100Response = IPerson[];
 
 export const Top100Params: Array<keyof ITop100Request> =
   ["checklistSort", "maxResults"];
