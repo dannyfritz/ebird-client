@@ -19,9 +19,11 @@ const denver = {
 
 const ebirdClient = new EbirdClient(apiKey);
 
-ebirdClient.taxonomy({
-  cat: [Category.SPECIES],
-  fmt: Format.JSON,
+ebirdClient.top100({
+  d: 23,
+  m: 3,
+  regionCode: "US-CO",
+  y: 2019,
 })
   .then((data) => console.log(data))
   .catch((error) => console.error(error));

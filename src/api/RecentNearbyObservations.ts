@@ -1,6 +1,6 @@
 import { Category } from "../constants/Category";
 import { Sort } from "../constants/Sort";
-import { IObservation } from "../interfaces/IObservation";
+import { IObservation } from "./IObservation";
 
 export interface IRecentNearbyObservationsRequest {
   lat: number;
@@ -16,3 +16,9 @@ export interface IRecentNearbyObservationsRequest {
 }
 
 export type IRecentNearbyObservationsResponse = IObservation[];
+
+export const RecentNearbyObservationsParams: Array<keyof IRecentNearbyObservationsRequest> =
+  ["lat", "lng", "dist", "back", "cat", "maxResults", "includeProvisional", "hotspot", "sort", "sppLocale"];
+
+export const RecentNearbyObservationsUrl = (request: IRecentNearbyObservationsRequest) =>
+  `/ref/obs/geo/recent`;
