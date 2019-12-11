@@ -10,7 +10,7 @@ import { IRecentChecklistsFeedRequest, IRecentChecklistsFeedResponse, RecentChec
 import { IRecentNearbyNotableObservationsRequest, IRecentNearbyNotableObservationsResponse, RecentNearbyNotableObservationsParams, RecentNearbyNotableObservationsUrl } from "./api/RecentNearbyNotableObservations";
 import { IRecentNearbyObservationsRequest, IRecentNearbyObservationsResponse, RecentNearbyObservationsParams, RecentNearbyObservationsUrl } from "./api/RecentNearbyObservations";
 import { IRecentNearbyObservationsOfASpeciesRequest, IRecentNearbyObservationsOfASpeciesResponse, RecentNearbyObservationsOfASpeciesParams, RecentNearbyObservationsOfASpeciesUrl } from "./api/RecentNearbyObservationsOfASpecies";
-import { IRecentNotableObservationsInARegionRequest, IRecentNotableObservationsInARegionResponse, RecentNotableObservationsInARegionUrl } from "./api/RecentNotableObservationsInARegion";
+import { IRecentNotableObservationsInARegionRequest, IRecentNotableObservationsInARegionResponse, RecentNotableObservationsInARegionUrl, RecentNotableObservationsInARegionParams } from "./api/RecentNotableObservationsInARegion";
 import { IRecentObservationsInARegionRequest, IRecentObservationsInARegionResponse, RecentObservationsInARegionParams, RecentObservationsInARegionUrl } from "./api/RecentObservationsInARegion";
 import { IRecentObservationsOfASpeciesInARegionRequest, IRecentObservationsOfASpeciesInARegionResponse, RecentObservationsOfASpeciesInARegionParams, RecentObservationsOfASpeciesInARegionUrl } from "./api/RecentObservationsOfASpeciesInARegion";
 import { IRegionalStatisticsOnADateRequest, IRegionalStatisticsOnADateResponse, RegionalStatisticsOnADateParams, RegionalStatisticsOnADateUrl } from "./api/RegionalStatisticsOnADate";
@@ -78,7 +78,7 @@ export class EbirdClient {
   }
 
   public recentNotableObservationsInARegion(request: IRecentNotableObservationsInARegionRequest): Promise<IRecentNotableObservationsInARegionResponse> {
-    return this.get(RecentNotableObservationsInARegionUrl, RecentObservationsInARegionParams, request);
+    return this.get(RecentNotableObservationsInARegionUrl, RecentNotableObservationsInARegionParams, request);
   }
 
   public recentObservationsInARegion(request: IRecentObservationsInARegionRequest): Promise<IRecentObservationsInARegionResponse> {

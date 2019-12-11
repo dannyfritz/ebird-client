@@ -111,8 +111,10 @@ test("recentNearbyObservationsOfASpecies", async (t) => {
 test("recentNotableObservationsInARegion", async (t) => {
   const data = await ebirdClient.recentNotableObservationsInARegion({
     regionCode: "US-CO",
+    //detail: "full", @todo update Detail to work here
   });
   t.assert(_.isArray(data));
+  //t.assert(_.isString(data[0].checklistId)); // @todo update IObservation to include "full" version
 });
 
 test("recentObservationsInARegion", async (t) => {
