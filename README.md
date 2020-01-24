@@ -65,4 +65,4 @@ ebird.recentNearbyNotableObservations({
 
 ## Documentation
 
-Refer to the [ebird 2.0 API docs](https://documenter.getpostman.com/view/664302/ebird-api-20/2HTbHW) for usage.
+Refer to the [ebird 2.0 API docs](https://documenter.getpostman.com/view/664302/S1ENwy59) for usage.
