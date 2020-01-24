@@ -5,6 +5,7 @@ import test from "ava";
 import _ from "lodash";
 
 import EbirdClient, { Format, RegionType } from "../src";
+import { IObservationFull } from "../src/api/IObservation";
 
 let ebirdClient: EbirdClient;
 test.beforeEach((_t) => {
@@ -110,11 +111,11 @@ test("recentNearbyObservationsOfASpecies", async (t) => {
 
 test("recentNotableObservationsInARegion", async (t) => {
   const data = await ebirdClient.recentNotableObservationsInARegion({
+    detail: "full",
     regionCode: "US-CO",
-    //detail: "full", @todo update Detail to work here
-  });
+  }) as IObservationFull[];
   t.assert(_.isArray(data));
-  //t.assert(_.isString(data[0].checklistId)); // @todo update IObservation to include "full" version
+  t.assert(_.isString(data[0].checklistId));
 });
 
 test("recentObservationsInARegion", async (t) => {
